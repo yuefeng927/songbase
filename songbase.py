@@ -13,18 +13,18 @@ def get_user(name):
     return render_template('user.html', user_name=name)
 
 @app.route('/my-song')
-def get_user():
-    return render_template('my-song.html', user_name=name)
+def get_song():
+    return render_template('my-song.html', songs=songs)
 
 
-@app.route('/songs')
+@app.route('/songs-no-extends')
 def get_all_songs():
     songs = [
         'song1',
         'song2',
         'song3'
     ]
-    return render_template('songs.html', songs=songs)
+    return render_template('songs-no-extends.html', songs=songs)
 
 
 @app.route('/users')
