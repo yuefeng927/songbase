@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% endblock %}
+{%block title%}
+  All Artists
+{% endblock %}
+{% block page_content %}
+    <h1>This page adds artist</h1>
+  <form action="/artist/add" method="post">
+    what's your name<br>
+    <input type="text" name="name"><br><br>
+    <input type="text" name="about"><br><br>
+    <input type="submit" name="" value="submit">
+    </form>
+{% endblock %}
