@@ -1,6 +1,7 @@
 from flask_script import Manager
 from songbase import app, db, Artist, Song
 
+
 manager = Manager(app)
 
 # reset the database and create two artists
