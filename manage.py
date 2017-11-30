@@ -12,9 +12,13 @@ def deploy():
     coldplay = Artist(name='Coldplay', about='Coldplay is a British rock band.')
     maroon5 = Artist(name='Maroon 5', about='Maroon 5 is an American pop rock band.')
     song1 = Song(name="Yellow", year=2004,lyrics='bla bla', artist = coldplay)
+    song2 = Song(name="Yellow 2", year=2004,lyrics='bla bla', artist = coldplay)
+
     db.session.add(coldplay)
     db.session.add(maroon5)
     db.session.add(song1)
+    db.session.add(song2)
+
     db.session.commit()
 
 if __name__=='__main__':
